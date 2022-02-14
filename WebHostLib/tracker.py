@@ -379,7 +379,7 @@ def __renderAlttpTracker(multisave: Dict[str, Any], room: Room, locations: Dict[
         display_data[base_name + "_url"] = alttp_icons[display_name]
 
     # The single player tracker doesn't care about overworld, underworld, and total checks. Maybe it should?
-    sp_areas = ordered_areas[2:15]
+    sp_areas = ordered_areas[0:15]
 
     player_big_key_locations = set()
     player_small_key_locations = set()
@@ -395,13 +395,20 @@ def __renderAlttpTracker(multisave: Dict[str, Any], room: Room, locations: Dict[
                 elif item_id in ids_small_key:
                     player_small_key_locations.add(ids_small_key[item_id])
 
+    # Turn location IDs into advancement tab counts
+    checked_locations = multisave.get("location_checks", {}).get((team, player), set())
+    lookup_name = lambda id: lookup_any_location_id_to_name[id]
+    location_info = {tab_name: {lookup_name(id): (id in checked_locations) for id in tab_locations}
+                     for tab_name, tab_locations in default_locations.items()}
+
+
     return render_template("lttpTracker.html", inventory=inventory,
                             player_name=player_name, room=room, icons=alttp_icons, checks_done=checks_done,
                             checks_in_area=seed_checks_in_area[player],
                             acquired_items={lookup_any_item_id_to_name[id] for id in inventory},
                             small_key_ids=small_key_ids, big_key_ids=big_key_ids, sp_areas=sp_areas,
                             key_locations=player_small_key_locations,
-                            big_key_locations=player_big_key_locations,
+                            big_key_locations=player_big_key_locations, location_info=location_info,
                             **display_data)
 
 

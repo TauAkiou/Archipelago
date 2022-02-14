@@ -9,7 +9,7 @@
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     padding: 3px 3px 10px;
-    width: 384px;
+    width: 400px;
     background-color: #546E7A;
 }
 
@@ -47,7 +47,7 @@
 }
 
 #location-table{
-    width: 384px;
+    width: 400px;
     border-left: 2px solid #000000;
     border-right: 2px solid #000000;
     border-bottom: 2px solid #000000;

@@ -17,6 +17,18 @@
         ]
       },
       {
+        "name": "Multiworld Setup Tutorial (Linux)",
+        "description": "A guide to setting up the Archipelago software to generate and host Multiworld on a computer running Linux.",
+        "files": [
+          {
+            "language": "English",
+            "filename": "archipelago/setup_linux_en.md",
+            "link": "archipelago/setup/linux/en",
+            "authors": [ "TauAkiou", "alwaysintreble" ]
+          }
+        ]
+      },
+      {
         "name": "Archipelago Website User Guide",
         "description": "A guide to using the Archipelago website to generate multiworlds or host pre-generated multiworlds.",
         "files": [
