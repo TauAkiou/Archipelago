@@ -175,6 +175,11 @@
             </tbody>
             {% endfor %}
         </table>
+        <table id="generic-link">
+            <tr>
+                <td><a href="{{ url_for("get_generic_tracker", tracker=room.tracker, tracked_team=team, tracked_player=player) }}">View Generic Tracker</a></td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>

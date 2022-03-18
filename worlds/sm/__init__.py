@@ -29,6 +29,11 @@ from randomizer import VariaRandomizer
 
 
 class SMWorld(World):
+    """
+    When space pirates snatch the last remaining Metroid, bounty hunter Samus Aran is called back into action!
+
+    Super Metroid is renowned as one of the greatest 2D action games ever made, and paved the way for the Metroid Prime series with its innovative blend of exploration, action and secrets galore.
+    """
     game: str = "Super Metroid"
     topology_present = True
     data_version = 1

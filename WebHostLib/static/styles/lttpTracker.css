@@ -9,7 +9,7 @@
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     padding: 3px 3px 10px;
-    width: 325px;
+    width: 350px;
     background-color: #42b149;
     font-size: 14px;
     cursor: default;
@@ -39,7 +39,7 @@
 }
 
 #location-table{
-    width: 325px;
+    width: 350px;
     border-left: 2px solid #000000;
     border-right: 2px solid #000000;
     border-bottom: 2px solid #000000;
@@ -69,21 +69,35 @@
     float: left;
     text-align: left;
     line-height: 20px;
-
+    width: 75%
 }
 
 #location-table th.counter{
     text-align: center;
     vertical-align: middle;
     font-size: 14px;
-    width: 15%
+    width: 19%
+}
+
+#location-table th.keycounter {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    width: 3%
+}
+
+#location-table td.keycounter {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    width: 3%
 }
 
 #location-table td.counter{
     text-align: center;
     vertical-align: middle;
     font-size: 14px;
-    width: 15%
+    width: 5%
 }
 
 #location-table td.location-check {
@@ -100,13 +114,43 @@
 
 #location-table tbody.locations {
     font-size: 12px;
-
-
 }
 
 #location-table td.location-name {
     padding-left: 16px;
     text-align: left;
+}
+
+#generic-link{
+    margin-top: 5px;
+    width: 350px;
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #42b149;
+    padding: 0 3px 3px;
+    font-size: 14px;
+    cursor: default;
+}
+
+#generic-link th{
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#generic-link td{
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 5px;
+    line-height: 20px;
 }
 
 .hide {
